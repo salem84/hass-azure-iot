@@ -62,7 +62,7 @@ async def async_setup(hass, config):
 
     async def iothub_client_init(config, device):
         
-        conn = "HostName={};DeviceId={};SharedAccessKey={}".format(config[DOMAIN].get("host"), device[0], device[1].get("auth_key"))
+        conn = "HostName={}.azure-devices.net;DeviceId={};SharedAccessKey={}".format(config[DOMAIN].get("host"), device[0], device[1].get("auth_key"))
 
         #_LOGGER.info("Device connection using connection string {}".format(conn))
         device_client = IoTHubDeviceClient.create_from_connection_string(conn)
