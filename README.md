@@ -53,7 +53,7 @@ Key | Type | Required | Description
 `azure-iot-host` | `string` | `True` |  Name of your Azure IoT Hub host (without .azure-devices.net)
 `azure-iot-device-name` | `string` | `True` |  Name of your Azure IoT Hub device
 `auth-key` | `string` | `True` |  The authentication key for the device
-`sensors` | `array` | `False` |  The sensor values you want to send to the Azure IoT hub. Note, not specifying any sensors will send all event changes to Azure IoT
+`sensors` | `array` | `False` |  The sensor values you want to send to the Azure IoT hub.<br/> _Note: not specifying any sensors will send all event changes to Azure IoT_
 
 
 ***
